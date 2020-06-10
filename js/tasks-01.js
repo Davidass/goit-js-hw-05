@@ -1,6 +1,6 @@
-const Account = function(object) {
-  this.login = object.login;
-  this.email = object.email;
+const Account = function({ login, email }) {
+  this.login = login;
+  this.email = email;
 };
 
 Account.prototype.getInfo = function() {
